@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的备忘录</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="lib/jquery-datetimepicker/bulid/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<!--定时提醒功能-->
+<div class="msg">
+    <span class="msg-content"></span>
+    <span class="anchor confirmed">知道了</span>
+</div>
+
+<div class="container"><!-- 总容器开始 -->
+    <h1>我的备忘录</h1>
+    <form class="add-task">
+        <input name="content" type="text" placeholder="输入备忘内容，提交后点击详细可添加时间" autofocus autocomplete="off">
+        <button type="submit">提交</button>
+    </form>
+
+    <div class="task-list"></div><!--清单列表-->
+
+    <div class="task-detail-mask"></div><!--压黑遮罩-->
+
+    <div class="task-detail"></div><!-- 任务详情 -->
+
+</div><!-- 总容器结束 -->
+<video class="alerter" src="alert.mp3"></video>
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/jquery-datetimepicker/bulid/jquery.datetimepicker.full.js"></script>
+<script src="lib/store/store.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>
